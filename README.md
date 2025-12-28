@@ -12,8 +12,7 @@ The project is built to solve a simple but real problem:
 ---
 
 ## 🌐 Live Demo
-
-(https://soham-patil-tech.github.io/ai-tools-hub/]
+https://soham-patil-tech.github.io/ai-tools-hub/
 ---
 
 ## ✨ Features
