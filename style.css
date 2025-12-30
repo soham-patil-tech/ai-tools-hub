@@ -381,3 +381,7 @@ body.light .footer{
 body.light #backToTop{
   color: #020617;
 }
+.tool-card::before{
+  pointer-events: none;
+}
+
