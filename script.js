@@ -77,11 +77,6 @@ const tools = [
 { name:"Peltarion", category:"automation", link:"https://peltarion.com", tags:["ml"], description:"ML workflow automation." },
 ];
 
-/* =======================
-   AI TOOLS DATA (SAFE)
-   ======================= */
-
-const tools = [ /* 🔥 KEEP YOUR FULL TOOLS ARRAY EXACTLY AS YOU SENT 🔥 */ ];
 
 /* =======================
    APP LOGIC (FIXED)
@@ -96,85 +91,53 @@ const resultCount = document.getElementById("resultCount");
 
 let currentCategory = "all";
 
-/* ✅ IMPROVED RENDER */
 function renderTools(){
   container.innerHTML = "";
   const search = searchInput.value.toLowerCase();
 
-  const filtered = tools.filter(t => {
-    const matchCategory =
-      currentCategory === "all" || t.category === currentCategory;
-
-    const matchSearch =
-      t.name.toLowerCase().includes(search) ||
-      t.description.toLowerCase().includes(search) ||
-      t.tags.join(" ").toLowerCase().includes(search);
-
-    return matchCategory && matchSearch;
-  });
+  const filtered = tools.filter(t =>
+    (currentCategory === "all" || t.category === currentCategory) &&
+    (t.name.toLowerCase().includes(search) ||
+     t.description.toLowerCase().includes(search) ||
+     t.tags.join(" ").toLowerCase().includes(search))
+  );
 
   resultCount.innerText = `Showing ${filtered.length} tools`;
 
-  if(filtered.length === 0){
-    container.innerHTML = `
-      <div class="tool-card">
-        <h3>No tools found</h3>
-        <p>Try another keyword or category.</p>
-      </div>
-    `;
-    return;
-  }
-
-  filtered.forEach((t,index)=>{
+  filtered.forEach(t=>{
     const card = document.createElement("div");
     card.className = "tool-card";
-    card.style.animationDelay = `${index * 40}ms`;
     card.innerHTML = `
       <h3>${t.name}</h3>
       <p>${t.description}</p>
       <a href="${t.link}" target="_blank" class="visit-btn">Visit Tool</a>
-      <div>
-        ${t.tags.map(tag=>`<span class="tag">#${tag}</span>`).join("")}
-      </div>
+      <div>${t.tags.map(tag=>`<span class="tag">#${tag}</span>`).join("")}</div>
     `;
     container.appendChild(card);
   });
 }
 
-/* CATEGORY FILTER */
 categoryItems.forEach(item=>{
-  item.addEventListener("click", ()=>{
+  item.onclick = ()=>{
     categoryItems.forEach(i=>i.classList.remove("active"));
     item.classList.add("active");
     currentCategory = item.dataset.cat;
     renderTools();
-  });
+  };
 });
 
-/* SEARCH */
 searchInput.addEventListener("input", renderTools);
 
-/* TAG CLICK → SEARCH */
-document.addEventListener("click", e=>{
-  if(e.target.classList.contains("tag")){
-    searchInput.value = e.target.innerText.replace("#","");
-    renderTools();
-  }
-});
-
-/* THEME TOGGLE (SAFE) */
-themeToggle.addEventListener("click", ()=>{
+themeToggle.onclick = ()=>{
   document.body.classList.toggle("light");
-});
+};
 
-/* BACK TO TOP */
 window.addEventListener("scroll", ()=>{
-  backToTop.style.display = window.scrollY > 400 ? "block" : "none";
+  backToTop.style.display = window.scrollY > 300 ? "block" : "none";
 });
 
-backToTop.addEventListener("click", ()=>{
-  window.scrollTo({ top:0, behavior:"smooth" });
-});
+backToTop.onclick = ()=>{
+  window.scrollTo({top:0, behavior:"smooth"});
+};
 
-/* INIT */
 renderTools();
