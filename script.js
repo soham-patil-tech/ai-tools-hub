@@ -75,71 +75,45 @@ const tools = [
 { name:"Browse AI", category:"automation", link:"https://browse.ai", tags:["scraping"], description:"Web data extraction." },
 { name:"Relevance AI", category:"automation", link:"https://relevanceai.com", tags:["automation"], description:"Business automation." },
 { name:"Peltarion", category:"automation", link:"https://peltarion.com", tags:["ml"], description:"ML workflow automation." },
-
-/* ===== SEARCH ===== */
-{ name:"Perplexity Search", category:"search", link:"https://perplexity.ai", tags:["search"], description:"AI search with citations." },
-{ name:"You.com", category:"search", link:"https://you.com", tags:["search"], description:"AI search engine." },
-{ name:"Komo Search", category:"search", link:"https://komo.ai", tags:["search"], description:"Conversational AI search." },
-{ name:"Consensus", category:"search", link:"https://consensus.app", tags:["research"], description:"Research paper search." },
-{ name:"Andi Search", category:"search", link:"https://andisearch.com", tags:["search"], description:"Ad-free AI search." },
-{ name:"Neeva AI", category:"search", link:"https://neeva.com", tags:["search"], description:"Private AI search." },
-{ name:"Metaphor", category:"search", link:"https://metaphor.systems", tags:["search"], description:"Search engine for LLMs." },
-{ name:"Elicit Search", category:"search", link:"https://elicit.org", tags:["research"], description:"Research assistant." },
-{ name:"Scite Search", category:"search", link:"https://scite.ai", tags:["citations"], description:"Citation-based search." },
-{ name:"Phind Search", category:"search", link:"https://phind.com", tags:["dev"], description:"Developer AI search." },
-
-/* ===== SEO ===== */
-{ name:"Surfer SEO", category:"seo", link:"https://surferseo.com", tags:["seo"], description:"SEO content optimization." },
-{ name:"Frase", category:"seo", link:"https://frase.io", tags:["seo"], description:"SEO research assistant." },
-{ name:"NeuronWriter", category:"seo", link:"https://neuronwriter.com", tags:["seo"], description:"AI SEO writing." },
-{ name:"Scalenut", category:"seo", link:"https://scalenut.com", tags:["seo"], description:"SEO & content marketing." },
-{ name:"Outranking", category:"seo", link:"https://outranking.io", tags:["seo"], description:"SEO strategy platform." },
-{ name:"MarketMuse", category:"seo", link:"https://marketmuse.com", tags:["seo"], description:"Content planning for SEO." },
-{ name:"Clearscope", category:"seo", link:"https://clearscope.io", tags:["seo"], description:"SEO optimization." },
-{ name:"Semrush AI", category:"seo", link:"https://semrush.com", tags:["seo"], description:"SEO insights." },
-{ name:"Ahrefs AI", category:"seo", link:"https://ahrefs.com", tags:["seo"], description:"SEO analysis." },
-{ name:"RankIQ", category:"seo", link:"https://rankiq.com", tags:["seo"], description:"SEO for bloggers." },
-
-/* ===== DESIGN ===== */
-{ name:"Canva AI", category:"design", link:"https://canva.com", tags:["design"], description:"AI-powered design." },
-{ name:"Adobe Firefly", category:"design", link:"https://firefly.adobe.com", tags:["design"], description:"Generative design AI." },
-{ name:"Figma AI", category:"design", link:"https://figma.com", tags:["ui"], description:"AI UI/UX design." },
-{ name:"Uizard", category:"design", link:"https://uizard.io", tags:["ui"], description:"AI UI generator." },
-{ name:"Framer AI", category:"design", link:"https://framer.com", tags:["web"], description:"AI website builder." },
-{ name:"Khroma", category:"design", link:"https://khroma.co", tags:["colors"], description:"AI color palettes." },
-{ name:"Looka", category:"design", link:"https://looka.com", tags:["branding"], description:"Logo & brand kit AI." },
-{ name:"Flair AI", category:"design", link:"https://flair.ai", tags:["branding"], description:"Product visuals." },
-{ name:"Designs.ai", category:"design", link:"https://designs.ai", tags:["branding"], description:"AI design suite." },
-{ name:"Visily", category:"design", link:"https://visily.ai", tags:["ui"], description:"Wireframing with AI." }
-
 ];
 
 /* =======================
-   APP LOGIC (SAFE)
+   AI TOOLS DATA (SAFE)
+   ======================= */
+
+const tools = [ /* 🔥 KEEP YOUR FULL TOOLS ARRAY EXACTLY AS YOU SENT 🔥 */ ];
+
+/* =======================
+   APP LOGIC (FIXED)
    ======================= */
 
 const container = document.getElementById("toolsContainer");
 const searchInput = document.getElementById("searchInput");
 const categoryItems = document.querySelectorAll("#categoryList li");
+const themeToggle = document.getElementById("themeToggle");
 const backToTop = document.getElementById("backToTop");
 const resultCount = document.getElementById("resultCount");
 
 let currentCategory = "all";
 
+/* ✅ IMPROVED RENDER */
 function renderTools(){
   container.innerHTML = "";
   const search = searchInput.value.toLowerCase();
 
-  const filtered = tools.filter(t =>
-    (currentCategory === "all" || t.category === currentCategory) &&
-    (
+  const filtered = tools.filter(t => {
+    const matchCategory =
+      currentCategory === "all" || t.category === currentCategory;
+
+    const matchSearch =
       t.name.toLowerCase().includes(search) ||
       t.description.toLowerCase().includes(search) ||
-      t.tags.join(" ").toLowerCase().includes(search)
-    )
-  );
+      t.tags.join(" ").toLowerCase().includes(search);
 
-  resultCount.textContent = `Showing ${filtered.length} tools`;
+    return matchCategory && matchSearch;
+  });
+
+  resultCount.innerText = `Showing ${filtered.length} tools`;
 
   if(filtered.length === 0){
     container.innerHTML = `
@@ -151,9 +125,10 @@ function renderTools(){
     return;
   }
 
-  filtered.forEach(t=>{
+  filtered.forEach((t,index)=>{
     const card = document.createElement("div");
     card.className = "tool-card";
+    card.style.animationDelay = `${index * 40}ms`;
     card.innerHTML = `
       <h3>${t.name}</h3>
       <p>${t.description}</p>
@@ -166,21 +141,40 @@ function renderTools(){
   });
 }
 
+/* CATEGORY FILTER */
 categoryItems.forEach(item=>{
-  item.onclick = ()=>{
+  item.addEventListener("click", ()=>{
     categoryItems.forEach(i=>i.classList.remove("active"));
     item.classList.add("active");
     currentCategory = item.dataset.cat;
     renderTools();
-  };
+  });
 });
 
+/* SEARCH */
 searchInput.addEventListener("input", renderTools);
 
-window.addEventListener("scroll",()=>{
+/* TAG CLICK → SEARCH */
+document.addEventListener("click", e=>{
+  if(e.target.classList.contains("tag")){
+    searchInput.value = e.target.innerText.replace("#","");
+    renderTools();
+  }
+});
+
+/* THEME TOGGLE (SAFE) */
+themeToggle.addEventListener("click", ()=>{
+  document.body.classList.toggle("light");
+});
+
+/* BACK TO TOP */
+window.addEventListener("scroll", ()=>{
   backToTop.style.display = window.scrollY > 400 ? "block" : "none";
 });
 
-backToTop.onclick = ()=>window.scrollTo({ top:0, behavior:"smooth" });
+backToTop.addEventListener("click", ()=>{
+  window.scrollTo({ top:0, behavior:"smooth" });
+});
 
+/* INIT */
 renderTools();
