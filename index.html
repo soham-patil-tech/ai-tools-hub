@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>AI Tools Hub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="logo">⚡ AI Tools Hub</div>
   <button id="themeToggle">🌙</button>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <h1>
     Discover the <span>Best Free AI Tools</span><br>
     in One Place
   </h1>
-  <p>Curated AI tools for students, developers, and creators.</p>
+  <p>
+    Discover and use the best free AI tools — curated for creators,
+    developers, and innovators.
+  </p>
 
   <div class="search-wrapper">
     <span class="search-icon">🔍</span>
-    <input id="searchInput" type="text" placeholder="Search AI tools..." />
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search AI tools (chat, image, video, code...)"
+    >
   </div>
 </section>
 
+<!-- APP -->
 <section class="app">
 
+  <!-- SIDEBAR -->
   <aside class="sidebar">
     <h3>Categories</h3>
     <ul id="categoryList">
@@ -41,12 +52,10 @@
       <li data-cat="audio">Audio</li>
       <li data-cat="education">Education</li>
       <li data-cat="automation">Automation</li>
-      <li data-cat="search">Search</li>
-      <li data-cat="seo">SEO</li>
-      <li data-cat="design">Design</li>
     </ul>
   </aside>
 
+  <!-- MAIN -->
   <main>
     <p id="resultCount" class="result-count"></p>
     <div id="toolsContainer" class="masonry"></div>
@@ -54,6 +63,7 @@
 
 </section>
 
+<!-- FOOTER -->
 <footer class="footer">
   <p>© 2025 AI Tools Hub • Built by Soham Patil</p>
 </footer>
