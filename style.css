@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
   font-family:'Inter',sans-serif;
@@ -19,16 +15,14 @@ body{
   z-index:50;
   display:flex;
   justify-content:space-between;
-  align-items:center;
   padding:16px 28px;
-  background:rgba(15,23,42,0.8);
+  background:rgba(15,23,42,.8);
   backdrop-filter:blur(16px);
 }
 
 .logo{
   font-family:'Space Grotesk',sans-serif;
   font-weight:700;
-  font-size:1.1rem;
 }
 
 .navbar button{
@@ -36,8 +30,8 @@ body{
   border:none;
   padding:8px 12px;
   border-radius:50%;
-  cursor:pointer;
   color:#fff;
+  cursor:pointer;
 }
 
 /* HERO */
@@ -60,7 +54,7 @@ body{
 
 /* SEARCH */
 .search-wrapper{
-  max-width:520px;
+  max-width:500px;
   margin:auto;
   position:relative;
 }
@@ -72,7 +66,6 @@ body{
   border:none;
   background:#020617;
   color:#fff;
-  outline:none;
 }
 
 .search-icon{
@@ -92,27 +85,17 @@ body{
 
 /* SIDEBAR */
 .sidebar{
-  width:260px;
+  width:240px;
   padding:40px 24px;
 }
 
-.sidebar h3{
-  margin-bottom:16px;
-  font-size:.9rem;
-  opacity:.7;
-}
-
-.sidebar ul{
-  list-style:none;
-}
+.sidebar ul{list-style:none;}
 
 .sidebar li{
   padding:10px 18px;
   border-radius:999px;
   margin-bottom:8px;
   cursor:pointer;
-  font-size:.85rem;
-  transition:.2s;
 }
 
 .sidebar li.active,
@@ -122,9 +105,7 @@ body{
 }
 
 /* MAIN */
-main{
-  flex:1;
-}
+main{flex:1;}
 
 .result-count{
   padding-left:30px;
@@ -139,7 +120,7 @@ main{
   padding:30px;
 }
 
-/* TOOL CARD */
+/* CARD */
 .tool-card{
   break-inside:avoid;
   margin-bottom:24px;
@@ -153,16 +134,6 @@ main{
 .tool-card:hover{
   transform:translateY(-6px);
   box-shadow:0 20px 40px rgba(56,189,248,.25);
-}
-
-.tool-card h3{
-  margin-bottom:8px;
-  font-size:1rem;
-}
-
-.tool-card p{
-  font-size:.8rem;
-  opacity:.8;
 }
 
 .visit-btn{
@@ -189,7 +160,6 @@ main{
   text-align:center;
   padding:36px 20px;
   opacity:.6;
-  font-size:.8rem;
 }
 
 /* BACK TO TOP */
@@ -202,14 +172,16 @@ main{
   border-radius:50%;
   border:none;
   background:linear-gradient(135deg,#38bdf8,#22d3ee);
-  cursor:pointer;
   display:none;
+  cursor:pointer;
 }
 
 /* RESPONSIVE */
-@media(max-width:1200px){
-  .masonry{ column-count:3; }
+@media(max-width:900px){
+  .masonry{column-count:2;}
+  .sidebar{display:none;}
 }
 
-@media(max-width:900px){
-  .masonry{ co
+@media(max-width:500px){
+  .masonry{column-count:1;}
+}
