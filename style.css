@@ -220,3 +220,106 @@ main{ flex:1; }
   cursor:pointer;
   display:none;
 }
+
+
+
+
+/* =========================================
+   FLUID SAME-EXPERIENCE RESPONSIVE ADD-ON
+   (Safe for live deployment)
+   ========================================= */
+
+/* 1. Fluid typography (same hierarchy everywhere) */
+body {
+  font-size: clamp(14px, 1.1vw, 16px);
+}
+
+.hero h1 {
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+}
+
+.hero p {
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
+}
+
+/* 2. Keep sidebar SAME, just scale it */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 210px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 180px;
+    padding: 24px 14px;
+  }
+
+  .sidebar li {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+}
+
+/* 3. Same grid, adaptive density (not layout change) */
+@media (max-width: 1024px) {
+  .masonry { column-count: 3; }
+}
+
+@media (max-width: 768px) {
+  .masonry { column-count: 2; }
+}
+
+@media (max-width: 480px) {
+  .masonry { column-count: 1; }
+}
+
+/* 4. Touch = hover equivalent (same feedback) */
+.tool-card {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.tool-card:active {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(56,189,248,.25);
+}
+
+/* 5. Invisible touch target improvements */
+.sidebar li,
+.visit-btn,
+#backToTop {
+  min-height: 44px;
+}
+
+/* 6. Search focus clarity (same UX, better feedback) */
+.search-wrapper input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(56,189,248,.35);
+}
+
+/* 7. Navbar scaling without redesign */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 14px 18px;
+  }
+}
+
+/* 8. Back-to-top thumb comfort (same control) */
+@media (max-width: 480px) {
+  #backToTop {
+    width: 52px;
+    height: 52px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* 9. Reduce motion for accessibility (professional polish) */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
