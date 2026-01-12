@@ -117,10 +117,15 @@ function renderTools(){
   container.innerHTML = "";
   const search = searchInput.value.toLowerCase();
 
-  const filtered = tools.filter(t =>
-    (currentCategory === "all" || t.category === currentCategory) &&
-    t.name.toLowerCase().includes(search)
-  );
+const filtered = tools.filter(t =>
+  (currentCategory === "all" || t.category === currentCategory) &&
+  (
+    t.name.toLowerCase().includes(search) ||
+    t.description.toLowerCase().includes(search) ||
+    t.tags.join(" ").toLowerCase().includes(search)
+  )
+);
+
 
   resultCount.innerText = `Showing ${filtered.length} tools`;
 
