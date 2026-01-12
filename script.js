@@ -20,6 +20,11 @@ const tools = [
 { name:"Character AI", category:"chat", link:"https://character.ai", tags:["chatbot"], description:"Chat with AI characters." },
 { name:"Komo AI", category:"chat", link:"https://komo.ai", tags:["search"], description:"AI-powered search engine." },
 { name:"Phind", category:"chat", link:"https://phind.com", tags:["search","dev"], description:"AI search for developers." },
+{ name:"Msty", category:"chat", link:"https://msty.app", tags:["chat","local"], description:"Local AI chat app for desktop." },
+{ name:"OpenRouter Chat", category:"chat", link:"https://openrouter.ai", tags:["chat","models"], description:"Chat with many AI models in one place." },
+{ name:"Neeva AI", category:"chat", link:"https://neeva.com", tags:["search"], description:"Private AI-powered search engine." },
+{ name:"Andi Search", category:"chat", link:"https://andisearch.com", tags:["search","chat"], description:"Conversational AI search assistant." }
+
 
 /* ===== IMAGE & DESIGN (20) ===== */
 { name:"Leonardo AI", category:"image", link:"https://leonardo.ai", tags:["image","art"], description:"AI image generation platform." },
