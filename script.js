@@ -47,6 +47,10 @@ const tools = [
 { name:"Khroma", category:"image", link:"https://khroma.co", tags:["colors"], description:"AI color palette generator." },
 { name:"Let's Enhance", category:"image", link:"https://letsenhance.io", tags:["upscale"], description:"Enhance image quality using AI." },
 { name:"BG Eraser", category:"image", link:"https://bgeraser.com", tags:["background"], description:"Remove background from images." },
+{ name:"Ideogram", category:"image", link:"https://ideogram.ai", tags:["image","text"], description:"AI image generator with accurate text." },
+{ name:"BlueWillow", category:"image", link:"https://www.bluewillow.ai", tags:["image","art"], description:"Free AI art generator on Discord." },
+{ name:"StockImg AI", category:"image", link:"https://stockimg.ai", tags:["image","branding"], description:"Generate logos, posters, and stock images." },
+{ name:"Illustroke", category:"image", link:"https://illustroke.com", tags:["svg","icons"], description:"Generate vector illustrations using AI." }
 
 /* ===== VIDEO (15) ===== */
 { name:"Runway ML", category:"video", link:"https://runwayml.com", tags:["video"], description:"AI video generation & editing." },
@@ -64,6 +68,9 @@ const tools = [
 { name:"Vizard AI", category:"video", link:"https://vizard.ai", tags:["shorts"], description:"AI video repurposing tool." },
 { name:"Opus Clip", category:"video", link:"https://opus.pro", tags:["shorts"], description:"Turn long videos into shorts." },
 { name:"Wisecut", category:"video", link:"https://wisecut.video", tags:["editing"], description:"Automatic video editing AI." },
+{ name:"Synthesia", category:"video", link:"https://www.synthesia.io", tags:["avatar","video"], description:"Create AI avatar videos from text." },
+{ name:"HeyGen", category:"video", link:"https://www.heygen.com", tags:["avatar","video"], description:"AI spokesperson & avatar video generator." },
+{ name:"Tavus", category:"video", link:"https://www.tavus.io", tags:["personalized","video"], description:"Personalized AI video generation." }
 
 /* ===== WRITING (15) ===== */
 { name:"Grammarly", category:"writing", link:"https://grammarly.com", tags:["writing"], description:"Grammar and writing assistant." },
@@ -81,6 +88,9 @@ const tools = [
 { name:"TextCortex", category:"writing", link:"https://textcortex.com", tags:["writing"], description:"AI writing and rewriting." },
 { name:"Paperpal", category:"writing", link:"https://paperpal.com", tags:["academic"], description:"Academic writing assistant." },
 { name:"AI Dungeon", category:"writing", link:"https://aidungeon.io", tags:["story"], description:"AI-powered storytelling." },
+{ name:"Jenni AI", category:"writing", link:"https://jenni.ai", tags:["academic","writing"], description:"AI writing assistant for research papers." },
+{ name:"Scite AI", category:"writing", link:"https://scite.ai", tags:["research","citations"], description:"AI for smart research citations." },
+{ name:"Anyword", category:"writing", link:"https://anyword.com", tags:["marketing","copy"], description:"Data-driven AI copywriting platform." }
 
 /* ===== CODE, AUDIO, PRODUCTIVITY (20) ===== */
 { name:"GitHub Copilot", category:"code", link:"https://github.com/features/copilot", tags:["code"], description:"AI coding assistant." },
@@ -103,6 +113,14 @@ const tools = [
 { name:"Khanmigo", category:"education", link:"https://khanacademy.org", tags:["education"], description:"AI tutor by Khan Academy." },
 { name:"Duolingo AI", category:"education", link:"https://duolingo.com", tags:["education"], description:"AI-powered language learning." },
 { name:"Coursera AI", category:"education", link:"https://coursera.org", tags:["education"], description:"AI-assisted learning platform." }
+{ name:"Mintlify", category:"code", link:"https://mintlify.com", tags:["docs","code"], description:"AI-generated developer documentation." },
+{ name:"Continue", category:"code", link:"https://continue.dev", tags:["open-source","code"], description:"Open-source AI coding assistant." },
+{ name:"Sourcery", category:"code", link:"https://sourcery.ai", tags:["python","code"], description:"AI code refactoring assistant." }
+{ name:"PlayHT", category:"audio", link:"https://play.ht", tags:["voice","tts"], description:"Ultra-realistic AI text-to-speech." },
+{ name:"Resemble AI", category:"audio", link:"https://www.resemble.ai", tags:["voice","cloning"], description:"AI voice cloning and generation." }
+{ name:"Superhuman AI", category:"productivity", link:"https://superhuman.com", tags:["email","productivity"], description:"AI-powered email productivity tool." },
+{ name:"Magical AI", category:"automation", link:"https://www.getmagical.com", tags:["automation","text"], description:"AI text expansion & automation." },
+{ name:"Bardeen", category:"automation", link:"https://www.bardeen.ai", tags:["automation","workflow"], description:"Automate workflows using AI." }
 ];
 
 /* =======================
