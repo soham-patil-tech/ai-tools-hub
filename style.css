@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 
+:root {
+  --bg: #ffffff;
+  --text: #020617;
+  --card: #ffffff;
+  --border: rgba(0,0,0,0.08);
+}
+
+body.dark {
+  --bg: #020617;
+  --text: #e5e7eb;
+  --card: rgba(2,6,23,.7);
+  --border: rgba(255,255,255,.08);
+}
+
 *{
   margin:0;
   padding:0;
@@ -8,8 +22,9 @@
 
 body{
   font-family:'Inter',sans-serif;
-  background:#020617;
-  color:#e5e7eb;
+  background: var(--bg);
+  color: var(--text);
+  transition: background .3s ease, color .3s ease;
 }
 
 /* NAVBAR */
@@ -132,8 +147,8 @@ main{ flex:1; }
   margin-bottom:24px;
   padding:22px;
   border-radius:22px;
-  background:rgba(2,6,23,.7);
-  border:1px solid rgba(255,255,255,.08);
+  background: var(--card);
+  border: 1px solid var(--border);
   transition:.3s;
 }
 
