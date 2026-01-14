@@ -134,6 +134,26 @@ const themeToggle = document.getElementById("themeToggle");
 const backToTop = document.getElementById("backToTop");
 const resultCount = document.getElementById("resultCount");
 
+
+
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+  document.body.classList.add("dark");
+  themeToggle.textContent = "☀️";
+} else {
+  themeToggle.textContent = "🌙";
+}
+
+themeToggle.onclick = () => {
+  document.body.classList.toggle("dark");
+  const isDark = document.body.classList.contains("dark");
+  themeToggle.textContent = isDark ? "☀️" : "🌙";
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+};
+
+
+
 let currentCategory = "all";
 
 function renderTools(){
@@ -199,10 +219,6 @@ document.addEventListener("click",e=>{
   }
 });
 
-/* THEME */
-themeToggle.onclick = ()=>{
-  document.body.classList.toggle("light");
-};
 
 /* BACK TO TOP */
 window.addEventListener("scroll",()=>{
