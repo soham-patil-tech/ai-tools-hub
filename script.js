@@ -24,6 +24,11 @@ const tools = [
 { name:"OpenRouter Chat", category:"chat", link:"https://openrouter.ai", tags:["chat","models"], description:"Chat with many AI models in one place." },
 { name:"Neeva AI", category:"chat", link:"https://neeva.com", tags:["search"], description:"Private AI-powered search engine." },
 { name:"Andi Search", category:"chat", link:"https://andisearch.com", tags:["search","chat"], description:"Conversational AI search assistant." },
+{ name:"ChatSonic", category:"chat", link:"https://writesonic.com/chat", tags:["chat","search"], description:"Real-time AI chat with Google search integration." },
+{ name:"Frank AI", category:"chat", link:"https://franks.ai", tags:["assistant","chat"], description:"AI assistant for search, writing, and Q&A." },
+{ name:"Ask AI", category:"chat", link:"https://askaichat.app", tags:["chat","assistant"], description:"Simple AI chat assistant for everyday questions." },
+{ name:"Elicit", category:"chat", link:"https://elicit.org", tags:["research","search"], description:"AI research assistant for finding academic papers." },
+   
 
 
 /* ===== IMAGE & DESIGN (20) ===== */
@@ -51,6 +56,11 @@ const tools = [
 { name:"BlueWillow", category:"image", link:"https://www.bluewillow.ai", tags:["image","art"], description:"Free AI art generator on Discord." },
 { name:"StockImg AI", category:"image", link:"https://stockimg.ai", tags:["image","branding"], description:"Generate logos, posters, and stock images." },
 { name:"Illustroke", category:"image", link:"https://illustroke.com", tags:["svg","icons"], description:"Generate vector illustrations using AI." },
+{ name:"Mage Space", category:"image", link:"https://www.mage.space", tags:["image","art"], description:"Free Stable Diffusion-based image generator." },
+{ name:"Dzine AI", category:"image", link:"https://dzine.ai", tags:["design","image"], description:"AI-powered design and image editing platform." },
+{ name:"PicWish", category:"image", link:"https://picwish.com", tags:["editing","background"], description:"AI photo editor and background remover." },
+{ name:"AutoDraw", category:"image", link:"https://www.autodraw.com", tags:["drawing","ai"], description:"AI-assisted drawing tool by Google." },
+
 
 /* ===== VIDEO (15) ===== */
 { name:"Runway ML", category:"video", link:"https://runwayml.com", tags:["video"], description:"AI video generation & editing." },
@@ -71,6 +81,11 @@ const tools = [
 { name:"Synthesia", category:"video", link:"https://www.synthesia.io", tags:["avatar","video"], description:"Create AI avatar videos from text." },
 { name:"HeyGen", category:"video", link:"https://www.heygen.com", tags:["avatar","video"], description:"AI spokesperson & avatar video generator." },
 { name:"Tavus", category:"video", link:"https://www.tavus.io", tags:["personalized","video"], description:"Personalized AI video generation." },
+{ name:"Pika Labs", category:"video", link:"https://pika.art", tags:["video","generation"], description:"Text-to-video AI generator." },
+{ name:"Vidyo AI", category:"video", link:"https://vidyo.ai", tags:["shorts","video"], description:"Create short clips from long videos using AI." },
+{ name:"Rotor Videos", category:"video", link:"https://rotorvideos.com", tags:["music","video"], description:"AI video creator for music promotion." },
+{ name:"Elai.io", category:"video", link:"https://elai.io", tags:["avatar","video"], description:"AI-generated presenter videos from text." },
+
 
 /* ===== WRITING (15) ===== */
 { name:"Grammarly", category:"writing", link:"https://grammarly.com", tags:["writing"], description:"Grammar and writing assistant." },
@@ -91,6 +106,11 @@ const tools = [
 { name:"Jenni AI", category:"writing", link:"https://jenni.ai", tags:["academic","writing"], description:"AI writing assistant for research papers." },
 { name:"Scite AI", category:"writing", link:"https://scite.ai", tags:["research","citations"], description:"AI for smart research citations." },
 { name:"Anyword", category:"writing", link:"https://anyword.com", tags:["marketing","copy"], description:"Data-driven AI copywriting platform." },
+{ name:"DeepL Write", category:"writing", link:"https://www.deepl.com/write", tags:["writing","rewrite"], description:"AI writing improvement tool by DeepL." },
+{ name:"Writecream", category:"writing", link:"https://writecream.com", tags:["marketing","writing"], description:"AI content and email generator." },
+{ name:"Essaybot", category:"writing", link:"https://essaybot.com", tags:["essay","writing"], description:"AI-assisted essay writing tool." },
+{ name:"LongShot AI", category:"writing", link:"https://longshot.ai", tags:["content","seo"], description:"AI long-form content generator." },
+   
 
 /* ===== CODE, AUDIO, PRODUCTIVITY (20) ===== */
 { name:"GitHub Copilot", category:"code", link:"https://github.com/features/copilot", tags:["code"], description:"AI coding assistant." },
@@ -100,6 +120,10 @@ const tools = [
 { name:"Replit AI", category:"code", link:"https://replit.com", tags:["code"], description:"AI coding in the browser." },
 { name:"Cursor", category:"code", link:"https://cursor.sh", tags:["code"], description:"AI-powered code editor." },
 { name:"Hugging Face", category:"code", link:"https://huggingface.co", tags:["ml"], description:"Open ML model hub." },
+{ name:"Amazon CodeWhisperer", category:"code", link:"https://aws.amazon.com/codewhisperer", tags:["code","assistant"], description:"AI coding companion by AWS." },
+{ name:"Refact AI", category:"code", link:"https://refact.ai", tags:["code","refactor"], description:"AI-powered code refactoring assistant." },
+{ name:"Pieces AI", category:"code", link:"https://pieces.app", tags:["code","snippets"], description:"Save, reuse, and generate code snippets with AI." },
+{ name:"AskCodi", category:"code", link:"https://askcodi.com", tags:["code","assistant"], description:"AI coding assistant for multiple languages." },
 { name:"Taskade", category:"productivity", link:"https://taskade.com", tags:["tasks"], description:"AI task management." },
 { name:"ClickUp AI", category:"productivity", link:"https://clickup.com", tags:["tasks"], description:"AI-powered project management." },
 { name:"Trello", category:"productivity", link:"https://trello.com", tags:["tasks"], description:"Task boards with AI features." },
@@ -110,6 +134,10 @@ const tools = [
 { name:"Murf AI", category:"audio", link:"https://murf.ai", tags:["voice"], description:"AI voice generator." },
 { name:"ElevenLabs", category:"audio", link:"https://elevenlabs.io", tags:["voice"], description:"AI voice synthesis." },
 { name:"Soundraw", category:"audio", link:"https://soundraw.io", tags:["music"], description:"AI music generation." },
+{ name:"Voicemaker", category:"audio", link:"https://voicemaker.in", tags:["tts","voice"], description:"Text-to-speech with natural AI voices." },
+{ name:"LALAL.AI", category:"audio", link:"https://www.lalal.ai", tags:["audio","music"], description:"AI vocal and music source separation." },
+{ name:"Audo Studio", category:"audio", link:"https://audo.ai", tags:["audio","cleanup"], description:"AI noise removal for audio." },
+{ name:"Cleanvoice AI", category:"audio", link:"https://cleanvoice.ai", tags:["audio","editing"], description:"Remove filler sounds from audio automatically." },
 { name:"Khanmigo", category:"education", link:"https://khanacademy.org", tags:["education"], description:"AI tutor by Khan Academy." },
 { name:"Duolingo AI", category:"education", link:"https://duolingo.com", tags:["education"], description:"AI-powered language learning." },
 { name:"Coursera AI", category:"education", link:"https://coursera.org", tags:["education"], description:"AI-assisted learning platform." },
