@@ -1,84 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="description" content="AI Tools Hub – Discover the best free AI tools for chat, image, video, writing, code, and productivity in one place.">
   <meta charset="UTF-8">
-  <title>AI Tools Hub</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Tools Hub</title>
+
+  <meta name="description" content="AI Tools Hub – Discover 120+ free & freemium AI tools for chat, image, video, writing, code, productivity, and more.">
+  <meta name="keywords" content="AI tools, free AI tools, chat AI, image AI, video AI, AI productivity, AI for developers">
+
+  <meta property="og:title" content="AI Tools Hub">
+  <meta property="og:description" content="Discover the best free & freemium AI tools in one place.">
+  <meta property="og:type" content="website">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <noscript>
-  <p style="text-align:center">Enable JavaScript for full experience.</p>
+  <p style="text-align:center;padding:12px;">
+    Enable JavaScript for the full experience.
+  </p>
 </noscript>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="logo">⚡ AI Tools Hub</div>
- <button id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
-  🌙
-</button>
+<nav class="navbar" role="navigation">
+  <div class="logo">
+    <a href="/" style="text-decoration:none;color:inherit;">
+      ⚡ AI Tools Hub
+    </a>
+  </div>
 
+  <button
+    id="themeToggle"
+    type="button"
+    aria-label="Toggle theme"
+    title="Toggle theme"
+  >
+    🌙
+  </button>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <h1>
     Discover the <span>Best Free AI Tools</span><br>
     in One Place
   </h1>
+
   <p>
-    Discover and use the best free AI tools — curated for creators,
-    developers, and innovators.
+    Discover and use the best free & freemium AI tools —
+    curated for creators, developers, and innovators.
   </p>
 
   <div class="search-wrapper">
-    <span class="search-icon">🔍</span>
-<input
-  type="text"
-  id="searchInput"
-  placeholder="Search AI tools (chat, image, video, code...)"
-  aria-label="Search AI tools"
-/>
+    <span class="search-icon" aria-hidden="true">🔍</span>
 
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search AI tools (chat, image, video, code...)"
+      aria-label="Search AI tools"
+      autocomplete="off"
+    >
   </div>
 </section>
 
-<!-- APP -->
 <section class="app">
 
-  <!-- SIDEBAR -->
   <aside class="sidebar">
-    <h3>Categories</h3>
+    <h2>Categories</h2>
     <ul id="categoryList">
-      <li class="active" data-cat="all">All</li>
-      <li data-cat="chat">Chat</li>
-      <li data-cat="image">Image</li>
-      <li data-cat="video">Video</li>
-      <li data-cat="writing">Writing</li>
-      <li data-cat="code">Code</li>
-      <li data-cat="productivity">Productivity</li>
-      <li data-cat="audio">Audio</li>
-      <li data-cat="education">Education</li>
-      <li data-cat="automation">Automation</li>
+      <li class="active" data-cat="all" title="All AI tools">All</li>
+      <li data-cat="chat" title="Chat AI tools">Chat</li>
+      <li data-cat="image" title="Image & design AI tools">Image</li>
+      <li data-cat="video" title="Video AI tools">Video</li>
+      <li data-cat="writing" title="Writing AI tools">Writing</li>
+      <li data-cat="code" title="Coding AI tools">Code</li>
+      <li data-cat="productivity" title="Productivity AI tools">Productivity</li>
+      <li data-cat="audio" title="Audio & voice AI tools">Audio</li>
+      <li data-cat="education" title="Education AI tools">Education</li>
+      <li data-cat="automation" title="Automation AI tools">Automation</li>
     </ul>
   </aside>
 
-  <!-- MAIN -->
   <main>
-    <p id="resultCount" class="result-count"></p>
+    <p id="resultCount" class="result-count" aria-live="polite"></p>
     <div id="toolsContainer" class="masonry"></div>
   </main>
 
 </section>
 
-<!-- FOOTER -->
 <footer class="footer">
-  <p>© 2025 AI Tools Hub • Built by Soham Patil</p>
+  <p>
+    © <span id="year"></span> AI Tools Hub • Built by Soham Patil
+  </p>
 </footer>
 
-<button id="backToTop" aria-label="Back to top">↑</button>
+<button
+  id="backToTop"
+  type="button"
+  aria-label="Back to top"
+  title="Back to top"
+>
+  ↑
+</button>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 <script src="script.js"></script>
+
 </body>
 </html>
