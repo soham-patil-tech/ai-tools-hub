@@ -217,7 +217,10 @@ const filtered = tools.filter(t =>
     card.innerHTML = `
       <h3>${t.name}</h3>
       <p>${t.description}</p>
-      <a href="${t.link}" target="_blank" class="visit-btn">Visit Tool</a>
+      <a href="${t.link}" target="_blank" rel="noopener noreferrer" class="visit-btn">
+  Visit Tool
+</a>
+
       <div>
         ${t.tags.map(tag=>`<span class="tag">#${tag}</span>`).join("")}
       </div>
