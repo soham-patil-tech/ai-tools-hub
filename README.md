@@ -82,6 +82,47 @@ Just clean engineering.
 
 ---
 
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome and appreciated!  
+Whether you're a beginner or an experienced developer, there’s something you can improve.
+
+### You can contribute by:
+- ➕ Adding new **genuinely free AI tools**
+- ✍️ Improving tool descriptions (clear & non-marketing)
+- 🎨 Enhancing UI/UX (animations, spacing, themes)
+- 📱 Improving mobile responsiveness
+- ♿ Enhancing accessibility (ARIA labels, contrast, keyboard support)
+- 🧾 Improving documentation
+
+### Contribution Rules
+- ❌ No paid tools or “free trials”
+- ❌ No external libraries or frameworks
+- ✅ Keep the UI clean and minimal
+- ✅ Follow existing code style
+
+### Steps to Contribute
+1. Fork the repository
+2. Create a new branch  
+   `git checkout -b feature/your-feature-name`
+3. Make your changes
+4. Test locally
+5. Submit a Pull Request with a clear description
+
+### Tool Submission Format
+
+When adding a new tool, please follow this structure:
+
+- **Name:** Tool Name  
+- **Category:** (e.g., Writing, Coding, Image, Productivity)  
+- **Description:** One clear line explaining what it does  
+- **Link:** Official website only  
+
+Tools must be usable instantly and completely free.
+
+
 ## 🌱 Future Improvements
 
 - ⭐ Tool bookmarking  
