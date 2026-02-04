@@ -28,6 +28,12 @@ const tools = [
 { name:"Frank AI", category:"chat", link:"https://franks.ai", tags:["assistant","chat"], description:"AI assistant for search, writing, and Q&A." },
 { name:"Ask AI", category:"chat", link:"https://askaichat.app", tags:["chat","assistant"], description:"Simple AI chat assistant for everyday questions." },
 { name:"Elicit", category:"chat", link:"https://elicit.org", tags:["research","search"], description:"AI research assistant for finding academic papers." },
+{ name:"DeepSeek Chat", category:"chat", link:"https://chat.deepseek.com", tags:["chat","reasoning"], description:"Powerful open AI chat with strong reasoning." },
+{ name:"Qwen Chat", category:"chat", link:"https://chat.qwen.ai", tags:["chat","llm"], description:"Alibaba’s advanced AI chat assistant." },
+{ name:"Groq Chat", category:"chat", link:"https://groq.com", tags:["chat","fast"], description:"Ultra-fast AI chat using Groq hardware." },
+{ name:"Kagi Assistant", category:"chat", link:"https://kagi.com", tags:["search","privacy"], description:"Privacy-focused AI search and assistant." },
+{ name:"ChatHub", category:"chat", link:"https://chathub.gg", tags:["chat","multi-model"], description:"Chat with multiple AI models side-by-side." },
+
    
 
 
@@ -60,6 +66,11 @@ const tools = [
 { name:"Dzine AI", category:"image", link:"https://dzine.ai", tags:["design","image"], description:"AI-powered design and image editing platform." },
 { name:"PicWish", category:"image", link:"https://picwish.com", tags:["editing","background"], description:"AI photo editor and background remover." },
 { name:"AutoDraw", category:"image", link:"https://www.autodraw.com", tags:["drawing","ai"], description:"AI-assisted drawing tool by Google." },
+{ name:"Fooocus", category:"image", link:"https://github.com/lllyasviel/Fooocus", tags:["image","open-source"], description:"Local AI image generation made easy." },
+{ name:"Krea AI", category:"image", link:"https://krea.ai", tags:["image","realtime"], description:"Real-time AI image generation & enhancement." },
+{ name:"Vectorizer AI", category:"image", link:"https://vectorizer.ai", tags:["svg","image"], description:"Convert images into vector SVGs." },
+{ name:"Pixelcut", category:"image", link:"https://pixelcut.ai", tags:["background","ecommerce"], description:"AI image editing for product photos." },
+{ name:"Recraft AI", category:"image", link:"https://recraft.ai", tags:["design","branding"], description:"AI for vector art, icons, and branding." },
 
 
 /* ===== VIDEO (15) ===== */
