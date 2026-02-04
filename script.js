@@ -96,6 +96,12 @@ const tools = [
 { name:"Vidyo AI", category:"video", link:"https://vidyo.ai", tags:["shorts","video"], description:"Create short clips from long videos using AI." },
 { name:"Rotor Videos", category:"video", link:"https://rotorvideos.com", tags:["music","video"], description:"AI video creator for music promotion." },
 { name:"Elai.io", category:"video", link:"https://elai.io", tags:["avatar","video"], description:"AI-generated presenter videos from text." },
+{ name:"Moonvalley", category:"video", link:"https://moonvalley.ai", tags:["video","generation"], description:"Cinematic AI video generation." },
+{ name:"Kaiber", category:"video", link:"https://kaiber.ai", tags:["video","music"], description:"AI videos from images & music." },
+{ name:"Genmo", category:"video", link:"https://genmo.ai", tags:["video","generation"], description:"Next-gen AI video creation platform." },
+{ name:"Sora (Preview)", category:"video", link:"https://openai.com/sora", tags:["video","text-to-video"], description:"Text-to-video AI by OpenAI (preview)." },
+{ name:"DeepBrain AI", category:"video", link:"https://www.deepbrain.io", tags:["avatar","video"], description:"AI human video presenter platform." },
+
 
 
 /* ===== WRITING (15) ===== */
@@ -121,6 +127,12 @@ const tools = [
 { name:"Writecream", category:"writing", link:"https://writecream.com", tags:["marketing","writing"], description:"AI content and email generator." },
 { name:"Essaybot", category:"writing", link:"https://essaybot.com", tags:["essay","writing"], description:"AI-assisted essay writing tool." },
 { name:"LongShot AI", category:"writing", link:"https://longshot.ai", tags:["content","seo"], description:"AI long-form content generator." },
+{ name:"Scholarcy", category:"writing", link:"https://www.scholarcy.com", tags:["research","summary"], description:"Summarize academic papers instantly." },
+{ name:"Explainpaper", category:"writing", link:"https://explainpaper.com", tags:["research","pdf"], description:"Explain complex research papers using AI." },
+{ name:"Paraphraser.io", category:"writing", link:"https://paraphraser.io", tags:["rewrite","writing"], description:"AI paraphrasing tool." },
+{ name:"Content at Scale", category:"writing", link:"https://contentatscale.ai", tags:["seo","content"], description:"Long-form SEO content generator." },
+{ name:"GhostWrite AI", category:"writing", link:"https://ghostwrite.ai", tags:["emails","writing"], description:"AI writing assistant for emails & content." },
+
    
 
 /* ===== CODE, AUDIO, PRODUCTIVITY (20) ===== */
