@@ -192,6 +192,12 @@ const tools = [
 { name:"Resemble AI", category:"audio", link:"https://www.resemble.ai", tags:["voice","cloning"], description:"AI voice cloning and generation." },
 { name:"Superhuman AI", category:"productivity", link:"https://superhuman.com", tags:["email","productivity"], description:"AI-powered email productivity tool." },
 { name:"Magical AI", category:"automation", link:"https://www.getmagical.com", tags:["automation","text"], description:"AI text expansion & automation." },
+{ name:"Zapier AI", category:"automation", link:"https://zapier.com", tags:["automation","workflow"], description:"Connect apps and automate workflows using AI." },
+{ name:"Make (Integromat)", category:"automation", link:"https://www.make.com", tags:["automation","integration"], description:"Visual automation platform for complex workflows." },
+{ name:"Peltarion", category:"automation", link:"https://peltarion.com", tags:["automation","ai"], description:"Build and deploy AI-powered automation." },
+{ name:"UiPath", category:"automation", link:"https://www.uipath.com", tags:["rpa","automation"], description:"Robotic Process Automation with AI." },
+{ name:"Power Automate", category:"automation", link:"https://powerautomate.microsoft.com", tags:["automation","workflow"], description:"Microsoft AI-powered workflow automation." },
+{ name:"Taskade AI", category:"automation", link:"https://taskade.com", tags:["automation","tasks"], description:"AI-powered task and workflow automation." },
 { name:"Bardeen", category:"automation", link:"https://www.bardeen.ai", tags:["automation","workflow"], description:"Automate workflows using AI." }
 ];
 
