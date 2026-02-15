@@ -1,7 +1,7 @@
 # ⚡ AI Tools Hub  
 **One place. Zero paywalls. 150+ Free AI tools.**
 
-AI Tools Hub is a carefully curated, SaaS-style web platform that brings together **100+ genuinely free AI tools** under one sleek, distraction-free interface.
+AI Tools Hub is a carefully curated, SaaS-style web platform that brings together **150+ genuinely free AI tools** under one sleek, distraction-free interface.
 
 No spam.  
 No fake “free trials.”  
