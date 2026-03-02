@@ -62,8 +62,6 @@ https://soham-patil-tech.github.io/ai-tools-hub/
 - Zero distractions — maximum discovery  
 - Built to feel like a real SaaS product  
 
-This is not a demo project.  
-It’s a product-first experience.
 
 ---
 
