@@ -121,13 +121,6 @@ When adding a new tool, please follow this structure:
 Tools must be usable instantly and completely free.
 
 
-## 🌱 Future Improvements
-
-- ⭐ Tool bookmarking  
-- 🧠 AI-powered recommendations  
-- 📱 Improved mobile experience  
-- 🔗 Community tool submission  
-
 ---
 
 ## 👨‍💻 Built By
