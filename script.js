@@ -165,6 +165,7 @@ const tools = [
 { name:"Notion", category:"productivity", link:"https://notion.so", tags:["notes","workspace"], description:"All-in-one workspace for notes, tasks, docs, and wikis with AI." },
 { name:"Notion Calendar", category:"productivity", link:"https://www.notion.so/calendar", tags:["calendar","schedule"], description:"AI-powered smart calendar by Notion." },
 { name:"Mem AI", category:"productivity", link:"https://mem.ai", tags:["notes","knowledge"], description:"AI note-taking app that organizes knowledge automatically." },
+{ name:"Remio", category:"productivity", link:"https://remio.ai", tags:["notes","knowledge","memory","local"], description:"Local-first AI memory and personal knowledge base." },
 { name:"Motion", category:"productivity", link:"https://usemotion.com", tags:["tasks","calendar"], description:"AI schedules tasks and meetings automatically." },
 { name:"Reclaim AI", category:"productivity", link:"https://reclaim.ai", tags:["calendar","focus"], description:"Smart AI calendar for time blocking and focus." },
 { name:"Sunsama", category:"productivity", link:"https://sunsama.com", tags:["planning","tasks"], description:"Daily planning and work-life balance tool." },
